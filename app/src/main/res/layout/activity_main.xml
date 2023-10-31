@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/ddImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/dd_logo"
+            android:contentDescription="@string/content_description"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/ddFoodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/ddFoodInput"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="50dp"
+            android:autofillHints="food"
+            android:hint="@string/add_food_input"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/ddAddFoodButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_food_btn"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/ddDecideButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/decide_btn" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
